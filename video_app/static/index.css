@@ -1,0 +1,34 @@
+body {
+  background-color:rgb(173, 173, 173);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.container {
+  padding-top: 50px;
+}
+.video-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 56.25%; /* A proporção do vídeo pode variar. Este exemplo tem uma proporção 16:9 (56.25% = 9/16 * 100%) */
+  position: relative;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+/* .card {
+  background: linear-gradient(#000000, hsl(0, 0%, 0%));
+} */
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  object-fit: cover;
+}
+
